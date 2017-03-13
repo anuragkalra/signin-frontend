@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple login">
+    <meta name="author" content="Anurag Kalra">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="flip">
+            <div class="card">
+              <div class="face front">
+                <div class="panel panel-default">
+                  <form class="form-horizontal">
+                    <br>
+                    <h1 class="text-center">Company Logo</h1>
+                    <br>
+                    <input class="form-control" placeholder="Username"/>
+                    <input class="form-control" placeholder="Password"/>
+                    
+                    <button class="btn btn-primary btn-block">LOG IN</button>
+                    <p><a  id="forgot" href="">Forgot Password</a></p>
+					<hr>
+					<p id="signIn" class="blue">Sign in with</p>
+                    <p class="social-icons"><i class="fa fa-facebook-f fa-lg"></i><i class="fa fa-google-plus fa-lg"></i><i class="fa fa-twitter fa-lg"></i></p>
+                    <hr>
+                    <p class="text-center">
+                      <a href="#" class="fliper-btn">Create new account?</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <div class="face back">
+                <div class="panel panel-default">
+                  <form class="form-horizontal">
+                    <br>
+                    <h1 class="text-center">Join today.</h1>
+                    <br>
+                    <!--<label>Basic Information</label>-->
+                    <input class="form-control" placeholder="First Name"/>
+					<input class="form-control" placeholder="Last Name"/>
+                    <input class="form-control" placeholder="Email"/>
+                    <!--<label>Private Information</label>-->
+                    <input class="form-control" placeholder="Password"/>
+                    <input class="form-control" placeholder="Mobile Number"/>
+                    <button class="btn btn-primary btn-block">SIGN UP</button>
+                    <p class="text-center">
+                      <a href="#" class="fliper-btn">Already have an account?</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $('.fliper-btn').click(function(){
+      $('.flip').find('.card').toggleClass('flipped');
+      
+      });
+    </script>
+  </body>
+</html>
